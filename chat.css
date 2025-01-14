@@ -91,6 +91,7 @@ body {
     font-weight: 700 !important;/*ความหนาตัวอักษร*/
     padding: 8px 30px !important;
     max-width: 80% !important;
+    min-width: auto !important;
     margin-left: 23px !important;
   }
    /*ทำให้ชื่อกกับข้อความอยู่คนละบรรทัด*/
