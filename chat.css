@@ -1,7 +1,7 @@
 /*ฉันยังไม่ค่อยมั่นใจว่ามันสวยหรือดูดียัง*/
 body {
     overflow: hidden;
-    background-color: rgba(33,33,33,0.59);
+    background-color: transparent;
     align-items: middle;
   }
   yt-live-chat-renderer {
@@ -97,10 +97,6 @@ body {
    yt-live-chat-text-message-renderer #message {
     /*ถ้าไม่ต้องการให้อยู่คนละบรรทัดให้ลบส่วนนี้ไปได้เลย*/
     display: block !important;
-   }
-  
-   yt-live-chat-text-message-renderer[whole-message-clickable] #message {
-    top: 10px !important;
    }
   
    yt-live-chat-text-message-renderer[whole-message-clickable] #message {
