@@ -1,0 +1,103 @@
+body {
+    overflow: hidden;
+    background-color: rgba(33,33,33,0.59);
+    align-items: middle;
+  }
+  yt-live-chat-renderer {
+    visibility: hidden !important;
+  }
+  yt-live-chat-renderer * {
+    visibility: initial !important;
+  }
+   /*ซ่อนทุกอย่างที่ไม่เกี่ยวข้อง*/
+  div#reaction-control-panel-overlay.yt-live-chat-renderer {
+    display: none !important;
+  }
+    /*ซ่อนทุกอย่างที่ไม่เกี่ยวข้อง*/
+  div#separator.yt-live-chat-renderer {
+    display: none !important;
+  }
+   /*ซ่อนทุกอย่างที่ไม่เกี่ยวข้อง*/
+  div#lower-bumper.yt-live-chat-paid-message-renderer {
+    display: none !important;
+  }
+   /*ซ่อนทุกอย่างที่ไม่เกี่ยวข้อง*/
+  div#action-buttons.style-scope,
+  div#before-content-buttons.style-scope {
+    display: none !important;
+  }
+   /*ซ่อนทุกอย่างที่ไม่เกี่ยวข้อง*/
+  yt-live-chat-item-list-renderer #item-scroller{
+    overflow: hidden !important;
+  }
+   /*ซ่อนทุกอย่างที่ไม่เกี่ยวข้อง*/
+  img.yt-img-shadow,
+  yt-live-chat-header-renderer,
+  yt-live-chat-message-input-renderer,
+  yt-live-chat-mode-change-message-renderer, 
+  yt-live-chat-viewer-engagement-message-renderer, 
+  yt-live-chat-server-error-message, 
+  yt-live-chat-banner-manager,
+  yt-live-chat-restricted-participation-renderer {
+    display: none;
+  }
+  yt-live-chat-text-message-renderer{
+    background-color: initial !important;
+    font-size: medium !important;
+    font-family:  "Zen Antique", "Noto Color Emoji", sans-serif;
+  }
+  
+  yt-live-chat-author-chip[is-highlighted] #author-name.owner.yt-live-chat-author-chip, #author-name.owner.yt-live-chat-author-chip {
+    background-color: red; /*สีพื้นหลังของแชทของเจ้าของช่อง*/
+    border: 4px solid rgb(138, 32, 32) !important;/*สีขอบพื้นหลังชื่อของเจ้าช่อง*/
+    color: rgb(39, 38, 38);/*สีชื่อของเจ้าของช่อง*/
+  }
+  yt-live-chat-author-chip[is-highlighted] #author-name.moderator.yt-live-chat-author-chip, #author-name.moderator.yt-live-chat-author-chip {
+    background-color: rgb(14, 57, 248) !important; /*สีพื้นหลังชื่อของผู้ดูแลช่อง*/
+    border: rgb(53, 53, 192) 4px solid !important;/*สีขอบพื้นหลังชื่อของผู้ดูแลช่อง*/
+    color: rgb(39, 38, 38) !important;/*สีชื่อของผู้ดูแลช่อง*/
+  }
+  yt-live-chat-author-chip[is-highlighted] #author-name.membership.yt-live-chat-author-chip, #author-name.membership.yt-live-chat-author-chip {
+    background-color: rgb(26, 59, 6) !important;/*สีพื้นหลังชื่อของคนสมัครสมาชิก*/
+    border: rgba(33,33,33,0.59) 4px solid !important;/*สีขอบของพื้นหลังชื่อ*/
+    color: rgb(39, 38, 38) !important;/*สีชื่อของคนสมัครสมาชิก*/
+  }
+  #author-name.yt-live-chat-author-chip {
+    background-color: rgb(57, 58, 56) ;/*สีพื้นหลังของชื่อของคนธรรรมดา*/
+    border: rgba(35, 34, 34, 0.993) 4px solid !important;/*สีขอบของพื้นหลังชื่อ*/
+    color: rgb(39, 38, 38) ;/*สีชื่อของคนธรรมดา*/
+  }
+  #author-name.yt-live-chat-author-chip /*รูปทรงพื้นหลังชื่อ*/ {
+    margin-top: 5px !important;
+    border-radius: 20px !important;
+    padding: 4px !important;
+    font-weight: 700 !important;
+    font-size: 20px !important;
+    margin-left: -6px !important;
+  }
+  
+  yt-live-chat-text-message-renderer {
+    margin-left: 12px !important;
+    margin-top: 5px !important;
+  }
+  
+  yt-live-chat-text-message-renderer #message /*แชทแบบร่วม*/ {
+    background-color: antiquewhite !important;/*สีพื้นหลังของแชท*/
+    border-radius: 20px !important;/*รูปทรง*/
+     color: #000000 !important;/*สีตัวอักษร*/
+     font-family: "Zen Antique", "Noto Color Emoji", sans-serif;
+    font-size: 20px !important;/*ขนาดอักษร*/
+    font-weight: 700 !important;/*ความหนาตัวอักษร*/
+    padding: 8px 30px !important;
+    max-width: 80% !important;
+    margin-left: 23px !important;
+  }
+   /*ทำให้ชื่อกกับข้อความอยู่คนละบรรทัด*/
+   yt-live-chat-text-message-renderer #message {
+    /*ถ้าไม่ต้องการให้อยู่คนละบรรทัดให้ลบส่วนนี้ไปได้เลย*/
+    display: block !important;
+   }
+  
+   yt-live-chat-text-message-renderer[whole-message-clickable] #message {
+    top: 10px !important;
+   }
